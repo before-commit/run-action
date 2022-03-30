@@ -8,6 +8,14 @@ inputs:
   token:
     description: github token to clone / push with
     required: false
+  git_user_name:
+    description: git user name of the pushed commits
+    required: false
+    default: 'pre-commit-fork[bot]'
+  git_user_email:
+    description: git user email of the pushed commits
+    required: false
+    default: 'pre-commit-fork[bot]@users.noreply.github.com'
 runs:
   using: 'node16'
   main: 'dist/index.js'
