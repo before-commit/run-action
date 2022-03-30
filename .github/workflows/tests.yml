@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  test-action:
     runs-on: ubuntu-latest
     env:
       SKIP: no-commit-to-branch
