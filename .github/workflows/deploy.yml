@@ -13,8 +13,6 @@ jobs:
     - uses: actions/setup-python@v2
     - run: pip install virtualenv
     - run: make
-    - name: self test newly built action
-      uses: ./
     - run: make push
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

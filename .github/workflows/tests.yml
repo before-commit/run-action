@@ -1,0 +1,19 @@
+name: tests
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      SKIP: no-commit-to-branch
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+      - uses: actions/setup-python@v2
+      - run: pip install virtualenv
+      - run: make
+      - name: self test newly built action
+        uses: ./
