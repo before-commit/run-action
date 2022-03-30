@@ -1,10 +1,10 @@
 {
   "private": true,
   "dependencies": {
-    "@actions/cache": "*",
-    "@actions/core": "*",
-    "@actions/exec": "*",
-    "@actions/github": "*"
+    "@actions/cache": "^0.2.1",
+    "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^3.0.0"
   },
   "devDependencies": {
     "webpack": "^5.70.0",
