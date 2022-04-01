@@ -7,7 +7,7 @@ venv: Makefile
 	venv/bin/pip install markdown-to-presentation
 
 node_modules: package.json
-	npm install --silent
+	yarn install --silent
 	test -d node_modules
 	touch node_modules
 
