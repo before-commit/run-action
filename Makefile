@@ -11,7 +11,7 @@ node_modules: package.json
 	test -d node_modules
 	touch node_modules
 
-dist/index.js: index.js node_modules
+dist/index.js: src/index.ts node_modules
 	node_modules/.bin/webpack --config webpack.config.js
 	# terrible hack to prevent lookup of `navigator`
 	# if someone knows the correct way to use webpack, PRs welcome!
