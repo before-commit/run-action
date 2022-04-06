@@ -11,7 +11,7 @@ node_modules: package.json
 	test -d node_modules
 	touch node_modules
 
-dist/index.js: src/index.ts node_modules
+dist/index.js: src/index.ts node_modules webpack.config.ts
 	node_modules/.bin/webpack --config webpack.config.ts
 
 .PHONY: push
