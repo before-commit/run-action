@@ -12,7 +12,7 @@ node_modules: package.json
 	touch node_modules
 
 dist/index.js: src/index.ts node_modules
-	node_modules/.bin/webpack --config webpack.config.js
+	node_modules/.bin/webpack --config webpack.config.ts
 
 .PHONY: push
 push: venv
