@@ -1,5 +1,5 @@
-name: pre-commit
-description: run pre-commit and optionally commit back to the pull request
+name: before-commit
+description: run before-commit or pre-commit and optionally commit back to the pull request
 inputs:
   extra_args:
     description: options to pass to pre-commit run
@@ -11,11 +11,11 @@ inputs:
   git_user_name:
     description: git user name of the pushed commits
     required: false
-    default: 'pre-commit-fork[bot]'
+    default: 'before-commit[bot]'
   git_user_email:
     description: git user email of the pushed commits
     required: false
-    default: 'pre-commit-fork[bot]@users.noreply.github.com'
+    default: 'before-commit[bot]@users.noreply.github.com'
 runs:
   using: 'node16'
   main: 'dist/index.js'
