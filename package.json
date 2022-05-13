@@ -4,7 +4,7 @@
     "@actions/cache": "^2.0.0",
     "@actions/core": "^1.8.0",
     "@actions/exec": "^1.0.4",
-    "@actions/github": "^5.0.1"
+    "@actions/github": "^5.0.2"
   },
   "devDependencies": {
     "source-map-loader": "^3.0.1",
